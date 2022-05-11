@@ -62,7 +62,7 @@ yargs.command({
     describe: "delete notes",
     builder: {
         title: {
-            describe: 'this is the delete title in command',
+            describe: 'this is the    e delete title in command',
             type: 'string',
             demandOption: true
         },
