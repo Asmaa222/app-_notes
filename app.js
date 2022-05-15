@@ -34,7 +34,7 @@
 //     console.log("error")
 // }
 ///////////////////////////////////////////////////////////
-const notes = require('./notes.js')
+const note = require('./notes.js')
 const yargs = require('yargs');
 
 yargs.command({
@@ -54,7 +54,7 @@ yargs.command({
     },
     handler: () => {
         //console.log("add")
-        notes.addnote(yargs.argv.title, yargs.argv.body)
+        note.addnote(yargs.argv.title, yargs.argv.body)
     }
 })
 yargs.command({
@@ -69,7 +69,7 @@ yargs.command({
     },
     handler: () => {
         //console.log("delete")
-        notes.removenote(yargs.argv.title)
+        note.removenote(yargs.argv.title)
     }
 })
 yargs.command({
@@ -84,7 +84,7 @@ yargs.command({
     },
     handler: () => {
         // console.log("read")
-        notes.readnote(yargs.argv.title)
+        note.readnote(yargs.argv.title)
     }
 })
 yargs.command({
